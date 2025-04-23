@@ -1,0 +1,22 @@
+\chapter{Discussion}
+
+\begin{itemize}
+    \item \textbf{P1 Observations:} The resistor network's voltage and current distribution were calculated analytically. The calculated value of $R_1$ ensures that the voltage across $R_3$ is exactly 3.8V. The simulation closely matched the theoretical values, validating the accuracy of the analytical approach.
+    \item \textbf{P2 Observations:}
+        \begin{itemize}
+            \item \textbf{Low Frequencies:}
+            \begin{itemize}
+                \item At lower frequencies, the calculated and simulated phase angles are relatively small, indicating that the circuit is not heavily reactive. The phase angle increases as the frequency rises, which is expected behavior in an RC circuit.
+                \item For example, at 10 Hz, the phase angle is approximately $11^{\circ}$, while at 100 Hz, it has increased to $64^{\circ}$. This is because, at lower frequencies, the capacitor takes longer to charge and discharge, resulting in a smaller lag between input and output signals.
+                
+            \end{itemize}
+            \item \textbf{Mid-Range Frequencies (100Hz-300Hz):}
+                \begin{itemize}
+                    \item As the frequency continues to increase, the phase angle increases more significantly, reaching value $80^{\circ}$ at 300 Hz. The circuit begins to exhibit weaker capacitive behavior, with the output voltage decreasingly lagging behind the input voltage.
+                \end{itemize}
+            \item \textbf{High Frequencies (1000Hz-3000Hz):}
+                \begin{itemize}
+                    \item At higher frequencies, the phase shift approaches a maximum of nearly $90^{\circ}$. The output voltage is almost completely out of phase with the input, signifying that the capacitor now dominates the circuit's impedance.
+                \end{itemize}
+        \end{itemize}
+\end{itemize}
